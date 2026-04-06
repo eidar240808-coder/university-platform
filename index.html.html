@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Platform</title>
+    <style>
+        :root {
+            --primary: #4A3AFF;
+            --dark: #001529;
+            --bg: #f4f7fe;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: var(--bg); display: flex; }
+        
+        /* Бүйірлік мәзір (Sidebar) */
+        .sidebar { width: 250px; height: 100vh; background: var(--dark); color: white; padding: 20px; position: fixed; }
+        .sidebar h2 { font-size: 20px; color: var(--primary); }
+        .sidebar nav a { display: block; color: #a0aec0; text-decoration: none; padding: 12px 0; border-bottom: 1px solid #1a2d42; }
+        .sidebar nav a:hover { color: white; }
+
+        /* Негізгі контент */
+        .main-content { margin-left: 290px; padding: 40px; width: 100%; }
+        .header-card { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .btn { background: var(--primary); color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; text-decoration: none; display: inline-block; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Learning App</h2>
+        <nav>
+            <a href="#">Басты бет</a>
+            <a href="#">Менің курстарым</a>
+            <a href="#">Кесте</a>
+            <a href="#">Форум</a>
+            <a href="#">Баптаулар</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="header-card">
+            <h1>Қош келдіңіз!</h1>
+            <p>Бұл сіздің оқу платформаңыздың прототипі. Оқуды жалғастыруға дайынсыз ба?</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Веб-әзірлеу негіздері</h3>
+                <p>HTML, CSS және жаңа технологияларды меңгеру курсы.</p>
+                <a href="#" class="btn">Курсты ашу</a>
+            </div>
+            <div class="card">
+                <h3>Прогресс</h3>
+                <p>Сіз курстың 80% аяқтадыңыз. Керемет нәтиже!</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
